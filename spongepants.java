@@ -1,5 +1,5 @@
 //public static ArmorMaterial pants = EnumHelper.addArmorMaterial("pants", "spongebobmod:spongepants", 10, new int[] {0, 0, 5, 0}, );
-//GameRegistry.registerItem(tutorialLeggings = new ItemModArmor("tutorial_leggings", TUTORIALA, 2, 2), "tutorial_leggings");
+//GameRegistry.registerItem(spongepants = new spongepants("spongepants", pants, 2, 2), "spongepants");
 package spongebobmod;
 
 //import [...];
