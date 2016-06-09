@@ -10,6 +10,6 @@ public class ItemModArmor extends ItemArmor {
         super(material, renderIndex, armorType);
         GameRegistry.registerItem(spongepants = new spongepants("spongepants", pants, 2, 2), "spongepants");
 
-        this.setUnlocalizedName(unlocalizedName);
+        this.setUnlocalizedName("spongepants");
     }
     //krusty krab pizza rock entity and pizza box with pizza and model for both
