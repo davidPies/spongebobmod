@@ -14,3 +14,10 @@ public class spongepants extends ItemArmor {
         this.setUnlocalizedName("spongepants");
     }
     //krusty krab pizza rock entity and pizza box with pizza and model for both
+    //krabby patty - patty; tab goes in spongebobmod file
+
+//public static final CreativeTabs spongebobmod = new CreativeTabs("spongebobmod") {
+    //@Override public Item getTabIconItem() {
+        //return spongebobmod.patty;
+    //}
+//};
