@@ -27,7 +27,6 @@ public class spatula extends ItemSword{
 	    	super(material);
 	        this.material = material;
 	        GameRegistry.registerItem(this, "spatula");
-	    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(this, 0, new ModelResourceLocation(spongebobmod.modid + ":" + this.getUnlocalizedName().substring(5), "inventory"));
 	        this.maxStackSize = 1;
 	        this.setMaxDamage(material.getMaxUses());
 	        this.setCreativeTab(CreativeTabs.tabCombat);
