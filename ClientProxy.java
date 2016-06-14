@@ -34,5 +34,6 @@ public class ClientProxy extends CommonProxy {
     }
     public void registerRenderers() {
     	entity1.registerRenderers(); 
+    	car1.registerRenderers();
 	}
 }
