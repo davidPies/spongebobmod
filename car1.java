@@ -9,6 +9,13 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.entity.RenderLiving;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
+import net.minecraft.client.Minecraft;
 
 public class car1 extends EntityPig {
 	public car1(World worldIn) {
@@ -34,4 +41,8 @@ public class car1 extends EntityPig {
 	        	}
 				return true;
 	    }
+@SideOnly(Side.CLIENT)
+	public static void registerRenderers(){
+		RenderingRegistry.registerEntityRenderingHandler(car1.class, new RenderLiving(Minecraft.getMinecraft().getRenderManager(), new model3(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("spongebobmod:car1");}});
+}
 }
