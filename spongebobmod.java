@@ -15,11 +15,11 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 //imports
-@Mod(modid = "spongebobmod", name = "3D Projectiles", version = "1.0")
+@Mod(modid = "spongebobmod", name = "Spongebob Mod", version = "1.0")
 public class spongebobmod{
 	   public static final String modid = "spongebobmod";
-	   public static final String name = "Generic Mod";
-	   public static final String version = "0.0.0";
+	   public static final String name = "Spongebob Mod";
+	   public static final String version = "1.0";
 	   
 public static Item spatula;
 public static ModelBase model2;
@@ -34,7 +34,7 @@ public static CommonProxy proxy;
 public void preInit(FMLPreInitializationEvent event){
    this.proxy.preInit(event);
    EntityRegistry.registerGlobalEntityID(entity1.class, "entity1", EntityRegistry.findGlobalUniqueEntityId());
-	EntityRegistry.registerModEntity(entity1.class, "entity1", EntityRegistry.findGlobalUniqueEntityId(), spongebobmod.modid, 64, 1, true);
+	EntityRegistry.registerModEntity(entity1.class, "entity1", EntityRegistry.findGlobalUniqueEntityId(), modid, 64, 1, true);
 	EntityList.entityEggs.put("entity1", new EntityList.EntityEggInfo("entity1", (204 << 16) + (255 << 8) + 51, (102 << 16) + (153 << 8) + 0));
 	EntityRegistry.addSpawn(entity1.class, 5, 2, 5, EnumCreatureType.CREATURE , entity1.wipe(BiomeGenBase.biomeRegistry));
 }
