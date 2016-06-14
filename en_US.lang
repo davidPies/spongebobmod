@@ -1,5 +1,7 @@
-entity.entity2.name=SpongeBob SquarePants
+entity.entity1.name=SpongeBob SquarePants
+entity.car1.name=Krabby Patty Car
 itemGroup.spongebobmod=Darvid's SpongeBob mod
 item.spatula.name=SpongeBob's Spatula
 item.claronet.name=Squidward's Claronet
+item.spatulagold.name=Golden Spatula
 //It goes in src/main/resources/assets/<modid>/lang.
