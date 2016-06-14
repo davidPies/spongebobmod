@@ -43,6 +43,6 @@ public class car1 extends EntityPig {
 	    }
 @SideOnly(Side.CLIENT)
 	public static void registerRenderers(){
-		RenderingRegistry.registerEntityRenderingHandler(car1.class, new RenderLiving(Minecraft.getMinecraft().getRenderManager(), new model3(), 0){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("spongebobmod:car1");}});
+		RenderingRegistry.registerEntityRenderingHandler(car1.class, new RenderLiving(Minecraft.getMinecraft().getRenderManager(), new model3(), 1){protected ResourceLocation getEntityTexture(Entity par1Entity){return new ResourceLocation("spongebobmod:car1");}});
 }
 }
