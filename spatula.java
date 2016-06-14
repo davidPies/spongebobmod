@@ -97,7 +97,7 @@ public class spatula extends ItemSword{
 	     */
 	    public int getItemEnchantability()
 	    {
-	        return this.material.getEnchantability();
+	        return this.material1.getEnchantability();
 	    }
 
 	    /**
@@ -105,7 +105,7 @@ public class spatula extends ItemSword{
 	     */
 	    public String getToolMaterialName()
 	    {
-	        return this.material.toString();
+	        return this.material1.toString();
 	    }
 
 	    /**
@@ -113,7 +113,7 @@ public class spatula extends ItemSword{
 	     */
 	    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	    {
-	        ItemStack mat = this.material.getRepairItemStack();
+	        ItemStack mat = this.material1.getRepairItemStack();
 	        if (mat != null && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, repair, false)) return true;
 	        return super.getIsRepairable(toRepair, repair);
 	    }
