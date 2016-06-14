@@ -21,7 +21,7 @@ public class spongebobmod{
 	   public static final String name = "Spongebob Mod";
 	   public static final String version = "1.0";
 	   
-public static Item spatula;
+public static spatula spatula;
 public static ModelBase model2;
 
 @Instance("spongebobmod")
@@ -47,3 +47,8 @@ public void postInit(FMLPostInitializationEvent event){
    this.proxy.postInit(event);
   }
 }
+ @Override
+   @SideOnly(Side.CLIENT)
+   public Item getTabIconItem() {
+       return spatula;
+   }
