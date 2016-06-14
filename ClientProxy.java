@@ -22,6 +22,10 @@ public class ClientProxy extends CommonProxy {
     
 
     public void init(FMLInitializationEvent e) {
+    	
+	    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(spongebobmod.spatula, 0, new ModelResourceLocation(spongebobmod.modid + ":" + spongebobmod.spatula.getUnlocalizedName().substring(5), "inventory"));
+	    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(spongebobmod.spatulagold, 0, new ModelResourceLocation(spongebobmod.modid + ":" + spongebobmod.spatulagold.getUnlocalizedName().substring(5), "inventory"));
+	    	//Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(this, 0, new ModelResourceLocation(spongebobmod.modid + ":" + this.getUnlocalizedName().substring(5), "inventory"));
     //this.init(e);
     }
 
